@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2S Embedding 😎</title>
+  </head>
+  <body>
+    <h1>Welcome Back to School</h1>
+    <h2>This is a subtitle</h2>
+    <h3>This is an even more subtitly subtitle</h3>
+
+    <div>This is a div?</div>
+
+    <div class="content">
+      <tableau-viz
+        id="tableauViz"
+        src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+        toolbar="bottom"
+        hide-tabs
+      >
+      </tableau-viz>
+    </div>
+
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
