@@ -1,0 +1,118 @@
+/* General Reset and Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* Smooth scroll effect */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(120deg, #a8c0ff, #fbc2eb);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cool Shadow for Headings */
+h1 {
+  font-size: 3em;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #374151;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+/* Card-Like Fieldset with 3D Effect */
+fieldset {
+  border: 2px solid #3b82f6;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 60%;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 3D effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+fieldset:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+  font-size: 1.2em;
+  color: #1d4ed8;
+}
+
+/* Animated Buttons */
+input[type="button"] {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 5px;
+}
+
+input[type="button"]:hover {
+  transform: scale(1.05); /* Grow slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+div {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+tableau-viz {
+  width: 90%;
+  height: 600px;
+  border: 3px solid #2563eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+tableau-viz:hover {
+  transform: scale(1.05); /* Slight scale on hover for the embedded viz */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  fieldset {
+    width: 80%;
+  }
+
+  tableau-viz {
+    width: 100%;
+    height: 500px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  input[type="button"] {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
